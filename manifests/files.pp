@@ -48,6 +48,7 @@ class postfix::files {
   } else {
     $mastercf_content = template(
         $postfix::params::master_os_template,
+        'metricwise/postfix/master.cf.erb',
         'postfix/master.cf.common.erb'
       )
   }
